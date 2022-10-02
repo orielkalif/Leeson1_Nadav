@@ -12,13 +12,12 @@ class LoginActivity : AppCompatActivity() {
 
 
     companion object {
-        val EMAIL_ADDRESS_INTENT : String = "EMAIL_ADDRESS_INTENT"
+        const val EMAIL_ADDRESS_INTENT : String = "EMAIL_ADDRESS_INTENT"
     }
 
-    lateinit var emailEt: EditText
-    lateinit var passwordEt: EditText
-    lateinit var loginBtn : Button
-
+    private lateinit var emailEt: EditText
+    private lateinit var passwordEt: EditText
+    private lateinit var loginBtn : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,10 +29,10 @@ class LoginActivity : AppCompatActivity() {
     }
 
 
-    val loginClickListener : (v:View) -> Unit = {
+    private val loginClickListener : (v:View) -> Unit = {
 
-        var emailAddress = emailEt.text.toString()
-        var password = passwordEt.text.toString()
+        val emailAddress = emailEt.text.toString()
+        val password = passwordEt.text.toString()
 
 
         if(emailAddress.isEmpty()) {
