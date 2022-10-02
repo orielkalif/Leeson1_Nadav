@@ -30,10 +30,10 @@ class LoginActivity : AppCompatActivity() {
     }
 
 
-    val loginClickListener : (v:View) -> Unit = {
+    private val loginClickListener : (v:View) -> Unit = {
 
-        var emailAddress = emailEt.text.toString()
-        var password = passwordEt.text.toString()
+        val emailAddress = emailEt.text.toString()
+        val password = passwordEt.text.toString()
 
 
         if(emailAddress.isEmpty()) {
