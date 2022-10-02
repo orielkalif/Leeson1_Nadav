@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Leeson1_Nadav</string>
+    <string name="order_a_pizza">Order a Pizza</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="continue_to_order">Continue to order</string>
+    <string name="small">small</string>
+    <string name="medium">medium</string>
+    <string name="large">large</string>
+</resources>
